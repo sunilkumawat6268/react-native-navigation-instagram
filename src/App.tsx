@@ -13,6 +13,7 @@ import {GestureHandlerRootView} from 'react-native-gesture-handler';
 LogBox.ignoreLogs([
   'Non-serializable values were found in the navigation state',
 ]);
+LogBox.ignoreAllLogs()
 export type RootStackParamList = {
   Home: undefined;
   Detail: {
