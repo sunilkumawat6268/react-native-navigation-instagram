@@ -52,7 +52,7 @@ const Post: React.FC<IPost> = ({id, images, avatar, name}) => {
         key={i}
         style={{
           ...styles.bullet,
-          opacity: currentImageIndex + 1 === i ? 0.5 : 0.1,
+          opacity: currentImageIndex + 1 === +i ? 0.5 : 0.1,
         }}>
         &bull;
       </Text>,
