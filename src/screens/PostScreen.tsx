@@ -27,6 +27,7 @@ function PostScreen() {
   const navigation = useNavigation<DetailScreenNavigationProp>();
   const {data} = router.params;
   const avatarOpacity = useSharedValue(1);
+  
   useLayoutEffect(() => {
     navigation.setOptions({
       headerTitle: data.name,
